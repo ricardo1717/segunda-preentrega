@@ -1,0 +1,358 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+/* selector universal */
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+/* header */
+.header {
+    background-color: #181818;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5em 2em;
+}
+
+.item-stiky {
+    position: sticky;
+    top: 0;
+}
+
+.logo-header  img{
+    width: 110px;
+    margin-left: 50%;
+}
+
+.nav-menu li a{
+    font-family: 'Poppins', sans-serif;
+    color: #ECE4C7;
+    margin-right: 6em;
+}
+
+.nav-menu ul {
+    display: flex;
+    align-items: center;
+}
+/* fin de header */
+
+/* main */
+.banner {
+    width: 100%;
+}
+
+.container-main {
+    background-color: #ccc;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 13%;
+    margin-right: 13%;
+    border-radius: 15px;
+    border: solid #EEE1C4 5px;
+}
+
+main div p {
+    font-size: 20px;
+    width: 30%;
+    margin: 20px 20px;
+    display: flex;
+    align-items: center; 
+}
+
+.img-main {
+    width: 35%;
+    border-radius: 10px;
+    margin: 20px 20px;
+}
+/* fin del main */
+
+/* seccion sabias que */
+.container-section {
+    display: flex;
+    background-color: #ccc;
+    justify-content: space-around;
+    margin-left: 13%;
+    margin-right: 13%;
+    border-radius: 15px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: solid #EEE1C4 5px;
+}
+
+.margin-p {
+    margin-left: 13%;
+    margin-right: 13%;
+    font-size: 20px;
+}
+
+.p-decoration {
+    width: 50%;
+    font-size: 20px;
+    margin: 20px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.img-section {
+    height: 320px;
+    border-radius: 10px;
+    margin: 20px 20px;
+}
+
+/* fin de la seccion sabias que */
+
+
+/* h1,h2,h3,p : textos*/
+h1 {
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5em;
+    justify-content: center;
+    margin: .5em .5em;
+    background-color: #EEE1C4;
+    width: 40%;
+    margin-left: 30%;
+    margin-right: 30%;
+    border-radius: 10px;
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    margin: .5em .5em;
+    background-color: #EEE1C4;
+    width: 30%;
+    margin-left: 35%;
+    margin-right: 35%;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+h3 {
+    font-family: 'Poppins', sans-serif;
+    margin: .5em;
+    display: flex;
+    justify-content: center;
+}
+
+p {
+    margin: .5em;
+    font-family: 'Poppins', sans-serif;
+}
+/* fin de los textos */
+
+
+/* galeria*/
+.grid-container {  
+    margin-left: 14%;
+    margin-right: 14%;
+    display: grid;
+    width: 68%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 15px 15px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "img-1 img-2 img-3"
+    "img-4 img-5 img-6"
+    "img-7 img-8 img-9";
+}
+
+.img-1 {
+    grid-area: img-1; 
+}
+
+.img-2 { 
+    grid-area: img-2; 
+}
+
+.img-3 { 
+    grid-area: img-3; 
+}
+
+.img-4 { 
+    grid-area: img-4; 
+}
+
+.img-5 { 
+    grid-area: img-5; 
+}
+
+.img-6 { 
+    grid-area: img-6; 
+}
+
+.img-7 { 
+    grid-area: img-7; 
+}
+
+.img-8 { 
+    grid-area: img-8; 
+}
+
+.img-9 { 
+    grid-area: img-9; 
+}
+
+.border-img {
+    border-radius: 10px;
+    border: solid #EEE1C4 6px;
+}
+/* fin de la galeria */
+
+
+/* tutoriales */
+iframe {
+    border-radius: 10px;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.grid-video {
+    width: 90%;
+    margin-left: 5.4%;  
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 15px 15px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "tuto-1 tuto-2"
+    "tuto-3 tuto-4"
+    "tuto-5 tuto-6";
+}
+
+.tuto-1 { 
+    grid-area: tuto-1; 
+}
+
+.tuto-2 { 
+
+    grid-area: tuto-2; 
+}
+
+.tuto-3 { 
+    grid-area: tuto-3; 
+}
+
+.tuto-4 { 
+    grid-area: tuto-4; 
+}
+
+.tuto-5 { 
+    grid-area: tuto-5; 
+}
+
+.tuto-6 { 
+    grid-area: tuto-6; 
+}
+
+.div-grid {
+    background-color: #ccc;
+    border-radius: 10px;
+    border: solid #EEE1C4 5px;
+}
+
+main div p {
+    border: solid #EEE1C4 5px;
+    border-radius: 10px;
+    width: 45%;
+}
+
+.h2-tutoriales {
+    width: 40%;
+    margin: 40px 30% 20px 30%;
+}
+
+.grid-container-video { 
+    width: 90%;
+    margin-left: 5.4%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 15px 15px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "video-1 video-2"
+    "video-3 video-4";
+}
+.video-1 { 
+    grid-area: video-1; 
+}
+
+.video-2 { 
+    grid-area: video-2; 
+}
+
+.video-3 { 
+    grid-area: video-3; 
+}
+
+.video-4 { 
+    grid-area: video-4; 
+}
+
+section div p {
+    border: solid #EEE1C4 5px;
+    border-radius: 10px;
+    width: 45%;
+}
+
+.margin-footer {
+    margin-bottom: 25px;
+}
+/* fin de los tutiriales */
+
+
+/* contacto */
+form {
+    margin: 1em 1em;
+}
+
+.form-container {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: #ccc;
+    border-radius: 10px;
+    border: solid #EEE1C4 6px;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+/* fin de contacto */
+
+
+/* footer*/
+#redes-sociales {
+    position: absolute;
+    width: 100%;
+    background-color: #181818;
+    color: white;
+}
+
+.redes-s {
+    width: 16%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 42%;
+    margin-right: 42%;
+    
+}
+
+.copyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    transition: all .5s;
+}
+
+.box:hover {
+    transform: scale(1.5);
+}
+/* fin del footer */
